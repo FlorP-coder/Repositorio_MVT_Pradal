@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>"Esta es mi familia"</h1>
+
+
+    {%for n in familia%}
+        <h3><p style=" color : red">Nombre: {{n.nombre}}</p></h3>
+        <h4><p style=" color : red">Apellido: {{n.apellido}}</p></h4>
+        <p style=" color : blue">Edad: {{n.edad}}</p>
+        <p style=" color : green">Relacion: {{n.relacion}}</p>
+        <p>Fecha_nac: {{n.fecha_nac}}</p>
+
+    {%endfor%}
+ 
+
+</body>
+</html>
